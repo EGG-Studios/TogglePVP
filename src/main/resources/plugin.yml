@@ -1,0 +1,4 @@
+name: TogglePVP
+version: '1.0-SNAPSHOT'
+main: org.eggstudios.togglePVP.TogglePVP
+api-version: '1.21'
