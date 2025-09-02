@@ -4,7 +4,8 @@ main: org.eggstudios.togglePVP.TogglePVP
 api-version: '1.21'
 commands:
   pvp:
-    description: Allows you to show other players if you want to PVP or not.
-    usage: /pvp [on|off]
+    description: To Toggle PVP on, loot or off.
+    usage: /togglepvp [pvp|loot|off]
     permission: togglepvp.toggle
     permission-message: §cOnly players can use this command!
+
