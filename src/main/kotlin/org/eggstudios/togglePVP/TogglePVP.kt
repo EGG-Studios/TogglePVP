@@ -1,5 +1,8 @@
 package org.eggstudios.togglePVP
 
+import net.kyori.adventure.text.Component
+import net.kyori.adventure.text.format.NamedTextColor
+import net.kyori.adventure.text.format.TextDecoration
 import org.bukkit.Bukkit
 import org.bukkit.plugin.java.JavaPlugin
 import org.eggstudios.togglePVP.commands.PVPCommand
@@ -23,12 +26,12 @@ class TogglePVP : JavaPlugin() {
 
         if (scoreboard.getTeam("PVP") == null) {
             val pvpTeam = scoreboard.registerNewTeam("PVP")
-            // Make the name of the team red
+            pvpTeam.prefix(Component.text("PVP ", NamedTextColor.RED, TextDecoration.BOLD))
         }
 
         if (scoreboard.getTeam("PVPLO") == null) {
             val pvpLoTeam = scoreboard.registerNewTeam("PVPLO")
-            // Make the name of the team dark red
+            pvpLoTeam.prefix(Component.text("PVPLO", NamedTextColor.DARK_RED, TextDecoration.BOLD))
         }
     }
 }
