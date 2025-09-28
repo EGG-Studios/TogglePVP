@@ -5,7 +5,7 @@ api-version: '1.21'
 commands:
   pvp:
     description: To Toggle PVP on, loot or off.
-    usage: /togglepvp [pvp|loot|off]
+    usage: /togglepvp pvp | loot | off
     permission: togglepvp.toggle
     permission-message: §cOnly players can use this command!
 
