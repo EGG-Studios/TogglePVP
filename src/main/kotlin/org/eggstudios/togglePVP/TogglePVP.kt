@@ -54,6 +54,7 @@ class TogglePVP : JavaPlugin() {
         val cooldownToSave = pvpCommand.cooldown.mapKeys { it.key.toString() }
         val file = File(dataFolder, "cooldown.yaml")
         // Ensure parent directories exist
+        // Here's a comment
         file.parentFile?.mkdirs()
         FileWriter(file).use { writer ->
             yaml.dump(cooldownToSave, writer)
